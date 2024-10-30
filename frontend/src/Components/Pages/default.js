@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-function App() {
+function default() => {
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default default;
