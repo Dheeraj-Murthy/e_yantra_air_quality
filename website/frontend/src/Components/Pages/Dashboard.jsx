@@ -46,36 +46,12 @@ function Dashboard() {
       {/* Data Cards */}
       <div className="grid grid-cols-2 gap-4 w-full max-w-md">
         {/* Temperature Card */}
-        <Card />
-        <Card />
+        <Card name="Temperature" myframe="https://thingspeak.com/channels/2653582/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" />
+        <Card name="Humidity" myframe="https://thingspeak.com/channels/2653582/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" />
+        <Card name="Dust" myframe="https://thingspeak.com/channels/2653582/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" />
+        <Card name="Qzone" myframe="https://thingspeak.com/channels/2653582/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" />
+        <Card name="Gases Quality" myframe="https://thingspeak.com/channels/2653582/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" />
 
-        {/* Humidity Card */}
-        <div className="bg-blue-100 shadow-md rounded-lg p-2 flex flex-col items-center">
-          <h3 className="text-sm font-semibold">Humidity</h3>
-          {/* Placeholder for Graph */}
-          <div className="h-20 w-full bg-gray-100 mt-2 rounded-sm"></div>
-        </div>
-
-        {/* Dust Concentration Card */}
-        <div className="bg-blue-100 shadow-md rounded-lg p-2 flex flex-col items-center">
-          <h3 className="text-sm font-semibold">Dust Concentration</h3>
-          {/* Placeholder for Graph */}
-          <div className="h-20 w-full bg-gray-100 mt-2 rounded-sm"></div>
-        </div>
-
-        {/* Ozone Card */}
-        <div className="bg-blue-100 shadow-md rounded-lg p-2 flex flex-col items-center">
-          <h3 className="text-sm font-semibold">Ozone</h3>
-          {/* Placeholder for Graph */}
-          <div className="h-20 w-full bg-gray-100 mt-2 rounded-sm"></div>
-        </div>
-
-        {/* Gases Card */}
-        <div className="bg-blue-100 shadow-md rounded-lg p-2 flex flex-col items-center">
-          <h3 className="text-sm font-semibold">Gases</h3>
-          {/* Placeholder for Graph */}
-          <div className="h-20 w-full bg-gray-100 mt-2 rounded-sm"></div>
-        </div>
       </div>
     </div >
   );
